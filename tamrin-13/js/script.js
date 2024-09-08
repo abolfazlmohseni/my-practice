@@ -4,9 +4,7 @@ let $ = document
 let listElem = $.querySelector('.list')
 let listItemsElem = $.querySelectorAll('.list-items')
 let inputElem = $.querySelector('.input-task')
-let trashIcon = $.querySelectorAll('.bi-trash')
-let checkboxIcon = $.querySelectorAll('.checkbox')
-let icons = $.querySelectorAll('.icons')
+
 
 inputElem.addEventListener("keydown", function (event) {
 
@@ -17,26 +15,30 @@ inputElem.addEventListener("keydown", function (event) {
     let Itemsspan = $.createElement("span")
     let Itemsdiv = $.createElement("div")
     let Itag1 = $.createElement("i")
-    let Itag2 = $.createElement("i")
 
-    Itemsdiv.append(Itag1, Itag2)
+    Itemsdiv.append(Itag1)
     newItems.append(Itemsspan, Itemsdiv)
 
     Itemsspan.innerHTML = ValueInput
     newItems.classList = "list-items"
     Itemsdiv.classList = "icons"
-    Itag1.classList = "bi bi-app checkbox"
-    Itag2.classList = "bi bi-trash"
+
+    Itag1.classList = "bi bi-trash"
 
     listElem.append(newItems)
     inputElem.value = ''
+    SelectNewIconTrash ()
   }
 
 })
 
-icons.forEach(function (item) {
-  let icons = $.querySelectorAll('.icons')
-  item.lastElementChild.addEventListener('click', function (event) {
-    event.target.parentElement.parentElement.remove()
+function SelectNewIconTrash () {
+  let trashIcon = $.querySelectorAll('.bi-trash')
+  trashIcon.forEach(function (icon){
+    icon.addEventListener('click',function(event){
+      event.target.parentElement.parentElement.remove()
+    })
   })
-})
+}
+
+SelectNewIconTrash ()
