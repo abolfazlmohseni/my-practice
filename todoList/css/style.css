@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'shabnam';
+    src: url(../font/Shabnam.woff2);
+}
+
+* {
+    font-family: 'shabnam';
+}
+
+body {
+    height: 100vh;
+    direction: rtl;
+    background-image: linear-gradient(to bottom,#36454F,#A7B8C3);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.conteyner{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-conteyner{
+    width: 600px;
+    height: 500px;
+}
+.header-todo{
+    display: flex;
+    justify-content: space-between;
+}
+.header_todo-items{
+    height: 50px;
+    width: 150px;
+    background-color: #181c1f;
+    border: 1px solid #696f74;
+    margin: 0 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.header_todo-items p{
+    color: #fff;
+    margin: 0;
+}
+.main-todo{
+    display: flex;
+    justify-content: space-between;
+}
+.main_todo-items{
+    width: 150px;
+    height: 500px;
+    background-color: #fff;
+    margin: 10px 2.5px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px #00000045,
+    -1px -1px 6px #00000045;
+}
+
+#add-todo{
+    width: 80%;
+    height: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #aaa;
+    color: #000;
+
+}

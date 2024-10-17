@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>todoList With Drag&Drop</title>
+</head>
+
+<body>
+    <div class="conteyner">
+        <div class="todo-conteyner">
+            <div class="header-todo">
+                <div class="header_todo-items">
+                    <p>بدون وضعیت</p>
+                </div>
+                <div class="header_todo-items">
+                    <p>شروع نشده</p>
+                </div>
+                <div class="header_todo-items">
+                    <p>در حال انجام</p>
+                </div>
+                <div class="header_todo-items">
+                    <p>انجام شده</p>
+                </div>
+            </div>
+            <div class="main-todo">
+                <div class="main_todo-items" id="noStatus">
+                    <button id="add-todo">+ اضافه کردن</button>
+                </div>
+                <div class="main_todo-items" id="notStarted"></div>
+                <div class="main_todo-items" id="inProgress"></div>
+                <div class="main_todo-items" id="done"></div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-addtodo">
+        <i class="bi bi-X">+</i>
+        <p>عنوان وضیفه را وارد کنید</p>
+        <input type="text" class="input-addtodo">
+        <button id="confirm">تایید</button>
+    </div>
+</body>
+
+</html>
