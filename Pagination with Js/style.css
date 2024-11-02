@@ -1,0 +1,63 @@
+@font-face {
+    font-family: iransans;
+    src: url(IRANSansWeb_Medium.woff2)format(woff2);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: iransans;
+}
+
+.conteyner {
+    width: 100%;
+    height: 95vh;
+}
+
+.itemCon {
+    width: 70%;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.items {
+    width: 90%;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 1px solid #00000055;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.BtnCon {
+    width: 40%;
+    height: 100px;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.BtnPageGhange {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 6px #00000035,
+        -1px -1px 6px #00000035;
+    background-color: #fff;
+    color: #115fb8;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.active {
+    background-color: #115fb8;
+    color: #fff;
+}
