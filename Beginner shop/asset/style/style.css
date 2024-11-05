@@ -7,3 +7,83 @@
     font-family: 'iransans';
     font-weight: 300;
 }
+body {
+    margin: 0;
+    padding: 0;
+}
+.conteyner{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar{
+    width: 95.4%;
+    height: 80px;
+    background-color: #b8b8b8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 35px;
+
+}
+.navbar-items{
+    list-style-type: none;
+}
+.navbar-items a{
+    color: #000;
+    text-decoration: none;    
+}
+.main{
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 1440px;
+}
+.Products{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.row-1,.row-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.Products-items{
+    width: 200px;
+    height: 270px;
+    box-shadow: 1px 1px 8px #00000045, -1px -1px 8px #00000045;
+    border-radius: 8px;
+}
+.Products-items div img {
+    width: 100px;
+    height: 100px;
+}
+.add-basket{
+
+}
+.basket{
+
+}
+.basket-header{
+
+}
+.name-Products{
+
+}
+.number{
+
+}
+.price{
+
+}
+.basket-total{
+
+}
+.footer{
+
+}
+.name{
+
+}
