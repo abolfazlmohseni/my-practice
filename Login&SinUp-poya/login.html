@@ -1,0 +1,70 @@
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ورود/ثبت نام</title>
+  <link rel="stylesheet" href="./asset/css/login-style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="title-text">
+      <div class="title login">ورود</div>
+      <div class="title signup">ثبت نام</div>
+    </div>
+    <div class="form-container">
+      <div class="slide-controls">
+        <input type="radio" name="slide" id="login" checked>
+        <input type="radio" name="slide" id="signup">
+        <label for="login" class="slide login">ورود</label>
+        <label for="signup" class="slide signup">ثبت نام</label>
+        <div class="slider-tab"></div>
+      </div>
+      <div class="form-inner">
+        <form id="loginForm" class="login margin">
+          <div class="field">
+            <input type="text" name="UserName" placeholder="ایمیل یا تلفن" required>
+          </div>
+          <div class="field password-container">
+            <input type="password" name="Password" placeholder="گذرواژه" required id="password1">
+            <i id="togglePassword1" class="bi bi-eye"></i>
+          </div>
+          <div class="field btn">
+            <div class="btn-layer"></div>
+            <input type="submit" value="ورود" class="submit">
+          </div>
+          <div class="signup-link">حسابی ندارید؟<a href="#">ثبت نام کنید</a></div>
+        </form>
+        <form id="registerForm" method="post" class="signup" class="registerForm">
+          <div class="field">
+            <input type="text" name="Name" placeholder="نام" required class="name">
+          </div>
+          <div class="field">
+            <input type="text" name="LastName" placeholder="نام خانوادگی" required class="LastName">
+          </div>
+          <div class="field">
+            <input type="number" name="NumberPhone" placeholder="شماره تلفن" required value="09" class="NumberPhone">
+          </div>
+          <div class="field">
+            <input type="email" name="Email" placeholder="ایمیل" required class="email">
+          </div>
+          <div class="field password-container">
+            <input type="password" name="Password" placeholder="گذرواژه" required id="password2" class="password">
+            <i id="togglePassword2" class="bi bi-eye"></i>
+          </div>
+          <div class="field btn">
+            <div class="btn-layer"></div>
+            <input type="submit" value="ثبت نام">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script type="module"src="./asset/js/login-script.js"></script>
+</body>
+
+</html>
