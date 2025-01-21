@@ -29,37 +29,60 @@
 //     console.log("erorr :(")
 // })
 
-let books = [
-    { id: 1, name: "ketab1", price: 10_000 },
-    { id: 2, name: "ketab2", price: 20_000 },
-    { id: 3, name: "ketab3", price: 40_000 },
-    { id: 4, name: "ketab4", price: 70_000 },
-    { id: 5, name: "ketab5", price: 40_000 }
-]
+// let books = [
+//     { id: 1, name: "ketab1", price: 10_000 },
+//     { id: 2, name: "ketab2", price: 20_000 },
+//     { id: 3, name: "ketab3", price: 40_000 },
+//     { id: 4, name: "ketab4", price: 70_000 },
+//     { id: 5, name: "ketab5", price: 40_000 }
+// ]
 
-function addbook(name, price) {
-    let newbook = {
-        id: books.length + 1,
-        name,
-        price
+// function addbook(name, price) {
+//     let newbook = {
+//         id: books.length + 1,
+//         name,
+//         price
+//     }
+
+//     return new Promise((resolve, erorr) => {
+//         setTimeout(() => {
+
+//             if (books.push(newbook)) {
+//                 resolve()
+//             } else {
+//                 erorr()
+//             }
+//             console.log(books)
+//         }, 3000)
+//     })
+
+// }
+
+// addbook('salam', 350000).then(()=>{
+//     console.log("resolve :))")
+// }).catch(()=>{
+//     console.log("Erorr :((")
+// })
+
+
+
+let textinput = document.querySelector(".textinput");
+let val = prompt("test")
+let mypromise = new Promise((resolve, reject) => {
+
+    if (val) {
+        resolve(val)
+    } else {
+        reject()
     }
 
-    return new Promise((resolve, erorr) => {
-        setTimeout(() => {
-
-            if (books.push(newbook)) {
-                resolve()
-            } else {
-                erorr()
-            }
-            console.log(books)
-        }, 3000)
-    })
-
-}
-
-addbook('salam', 350000).then(()=>{
-    console.log("resolve :))")
-}).catch(()=>{
-    console.log("Erorr :((")
 })
+
+mypromise.then(text => text.split(""))
+    .then(text2 => text2.reverse())
+    .then(text3 => text3.join(""))
+    .then(text4 => console.log(text4))
+    .catch("Erorr!!")
+
+
+
